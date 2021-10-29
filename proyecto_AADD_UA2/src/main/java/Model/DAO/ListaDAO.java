@@ -49,8 +49,7 @@ public class ListaDAO extends Lista{
 
 					ps.setString(1, this.Nombre);
 					ps.setString(2, this.Descripcion);
-					ps.setInt(3, this.creador.getId());
-
+					ps.setString(3, this.creador.getNombre());
 					ps.executeUpdate();
 					// Solo lo puedes ejecutar si has puesto RETURN_GENERATED_KEYS
 					rs = ps.getGeneratedKeys();
@@ -82,7 +81,7 @@ public class ListaDAO extends Lista{
 
 				ps.setString(1, this.Nombre);
 				ps.setString(2, this.Descripcion);
-				ps.setInt(3, this.creador.getId());
+				ps.setString(3, this.creador.getNombre());
 				
 				ps.executeUpdate();
 			} catch (SQLException e) {
