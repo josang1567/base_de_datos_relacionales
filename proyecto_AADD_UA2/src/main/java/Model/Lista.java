@@ -5,11 +5,11 @@ import java.util.List;
 public class Lista {
 	protected String Nombre;
 	protected String Descripcion;
-	protected Artista creador;
+	protected Usuario creador;
 	protected List<Usuario> Subcriptores;
 	protected int id;
 	
-	public Lista(String nombre, String descripcion, Artista creador) {
+	public Lista(String nombre, String descripcion, Usuario creador) {
 		super();
 		Nombre = nombre;
 		Descripcion = descripcion;
@@ -17,7 +17,7 @@ public class Lista {
 	}
 
 	
-	public Lista(String nombre, String descripcion, Artista creador, int id) {
+	public Lista(String nombre, String descripcion, Usuario creador, int id) {
 		super();
 		Nombre = nombre;
 		Descripcion = descripcion;
@@ -46,11 +46,11 @@ public class Lista {
 		Descripcion = descripcion;
 	}
 
-	public Artista getCreador() {
+	public Usuario getCreador() {
 		return creador;
 	}
 
-	public void setCreador(Artista creador) {
+	public void setCreador(Usuario creador) {
 		this.creador = creador;
 	}
 

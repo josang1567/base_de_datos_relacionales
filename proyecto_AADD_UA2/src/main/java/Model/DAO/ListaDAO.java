@@ -29,7 +29,7 @@ public class ListaDAO extends Lista{
 		super();
 	}
 
-	public ListaDAO(String nombre, String descripcion, Artista creador, int id) {
+	public ListaDAO(String nombre, String descripcion, Usuario creador, int id) {
 		super(nombre, descripcion, creador, id);
 	}
 
@@ -135,8 +135,8 @@ public class ListaDAO extends Lista{
 
 				while (rs.next()) {
 					
-					ArtistaDAO x= new ArtistaDAO();
-					Artista xs=x.mostrarPorNombre(rs.getString("creador"));
+					UsuarioDAO x= new UsuarioDAO();
+					Usuario xs=x.MostrarNombre(rs.getString("creador"));
 					resultado.add(new Lista(
 						
 							rs.getString(""),

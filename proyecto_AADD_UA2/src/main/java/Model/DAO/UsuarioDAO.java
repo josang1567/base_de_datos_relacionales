@@ -197,4 +197,42 @@ public class UsuarioDAO extends Usuario {
 		return resultado;
 	}
 
+	public Usuario MostrarNombre(String nombre) {
+		Usuario resultado= new Usuario();
+		con=MariaDBConexion.getConexion();
+		if(con != null) {
+			PreparedStatement ps= null;
+			ResultSet rs= null;
+			try {
+				ps=con.prepareStatement(MOSTRARPORNOMBRE);
+				ps.setString(1, nombre);
+				rs= ps.executeQuery();
+				
+				while (rs.next()) {
+
+					resultado=(new Usuario(
+
+							rs.getString("nombre"), 
+							rs.getString("descripcion"),
+							rs.getString("foto"),
+							rs.getString("contraseña")
+							
+							)
+							);
+				}
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}finally {
+				try {
+					ps.close();
+					rs.close();
+				} catch (SQLException e) {
+					// TODO: handle exception
+				}
+			}
+		}
+		
+		return resultado;
+	}
+
 }
