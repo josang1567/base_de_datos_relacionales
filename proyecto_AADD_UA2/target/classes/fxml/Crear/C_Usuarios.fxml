@@ -2,32 +2,45 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="324.0" prefWidth="346.0" style="-fx-border-color: black; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto_AADD_UA2.proyecto_AADD_UA2.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="346.0" style="-fx-border-color: black; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto_AADD_UA2.proyecto_AADD_UA2.FXMLController">
    <children>
-      <GridPane alignment="CENTER" layoutX="51.0" layoutY="41.0" prefHeight="215.0" prefWidth="243.0">
+      <GridPane alignment="CENTER" layoutX="51.0" layoutY="35.0" prefHeight="362.0" prefWidth="243.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="94.00000610351563" minHeight="5.2000202178955135" prefHeight="27.80000762939453" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="195.5999797821045" minHeight="10.0" prefHeight="35.40001220703125" valignment="TOP" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="158.00001373291016" minHeight="0.0" prefHeight="36.4000244140625" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="104.39997558593751" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.00001373291016" minHeight="0.0" prefHeight="39.2000244140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="33.79999999999998" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="25.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="33.99998474121094" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="42.00001220703123" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="29.399981689453142" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="37.400006103515636" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="10.0" prefHeight="67.79999389648435" valignment="TOP" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <Label style="-fx-background-color: white; -fx-border-color: black;" text="Nombre" />
             <TextField promptText="Nombre" GridPane.rowIndex="1" />
-            <Label style="-fx-border-color: black;" text="Descripcion" GridPane.rowIndex="2" />
-            <TextArea prefHeight="98.0" prefWidth="254.0" GridPane.rowIndex="3" />
+            <Label style="-fx-background-color: white; -fx-border-color: black;" text="Correo " GridPane.rowIndex="2" />
+            <Label style="-fx-background-color: white; -fx-border-color: black;" text="Contraseña " GridPane.rowIndex="4" />
+            <Label style="-fx-background-color: white; -fx-border-color: black;" text="Foto " GridPane.rowIndex="7" />
+            <TextField promptText="Correo" GridPane.rowIndex="3" />
+            <ImageView fitHeight="190.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" text="Seleccionar foto" GridPane.rowIndex="8" />
+            <PasswordField promptText="Inserte la contraseña" GridPane.rowIndex="5" />
+            <PasswordField promptText="Inserte la contraseña otra vez" GridPane.rowIndex="6" />
          </children>
       </GridPane>
-      <Button layoutX="119.0" layoutY="263.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="108.0" text="Registrarse" />
+      <Button layoutX="119.0" layoutY="551.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="108.0" text="Registrarse" />
    </children>
 </AnchorPane>
