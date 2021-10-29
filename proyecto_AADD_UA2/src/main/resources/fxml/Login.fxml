@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="346.0" style="-fx-border-color: black; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto_AADD_UA2.proyecto_AADD_UA2.FXMLController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="25.0" layoutY="18.0" prefHeight="170.0" prefWidth="309.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="94.00000610351563" minHeight="5.2000202178955135" prefHeight="25.599993896484374" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="195.5999797821045" minHeight="10.0" prefHeight="38.40000610351562" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="158.00001373291016" minHeight="0.0" prefHeight="23.99999389648437" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="171.5999816894531" minHeight="0.0" prefHeight="56.800006103515614" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-background-color: white; -fx-border-color: black;" text="Usuario" />
+            <TextField promptText="Usuario" GridPane.rowIndex="1" />
+            <Label style="-fx-border-color: black;" text="Contraseña" GridPane.rowIndex="2" />
+            <PasswordField promptText="Contraseña" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="136.0" layoutY="188.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="72.0" text="Login" />
+      <Button layoutX="118.0" layoutY="265.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="108.0" text="Registrarse" />
+      <Label layoutX="167.0" layoutY="241.0" text="O" />
+   </children>
+</AnchorPane>
