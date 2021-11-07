@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -38,6 +39,9 @@
          </children>
       </GridPane>
       <Button layoutX="121.0" layoutY="428.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="108.0" text="Registrarse" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/Logo/634741.png" />
+         </image></ImageView>
    </children>
 </AnchorPane>

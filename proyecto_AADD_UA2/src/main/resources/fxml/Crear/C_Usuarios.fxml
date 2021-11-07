@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,6 +13,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="346.0" style="-fx-border-color: black; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto_AADD_UA2.proyecto_AADD_UA2.FXMLController">
    <children>
+      <ImageView fitHeight="33.0" fitWidth="66.0" layoutX="299.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Logo/x-30465_640.png" />
+         </image>
+      </ImageView>
       <GridPane alignment="CENTER" layoutX="51.0" layoutY="35.0" prefHeight="362.0" prefWidth="243.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
