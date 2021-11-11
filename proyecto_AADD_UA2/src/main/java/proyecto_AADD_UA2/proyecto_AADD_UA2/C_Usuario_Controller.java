@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Model.DAO.UsuarioDAO;
+import Utils.Utils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -29,14 +30,35 @@ public class C_Usuario_Controller {
 	@FXML
 	private ImageView foto;
 	@FXML
+	private TextField urltext;
+	@FXML
 	private Button seleccionarFoto;
 	@FXML
 	private ImageView cancelar;
 	
 	@FXML
+	//metodo del metodo de agregar
 	private void switchtousuarios() throws IOException{
 		if(!validarFormulario()) 
 			return;
+		uD.setNombre(nombretext.getText());
+		uD.setCorreo(correotext.getText());
+		uD.setContraseña(contraseña1text.getText());
+		Utils.saveImage(urltext.getText(),direccionurl+uD.getNombre());
+		uD.setFoto(direccionurl+uD.getNombre()+".jpg");
+		uD.setFoto(direccionurl);
+		try {
+			
+		}catch(Exception e) {
+			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setHeaderText(null);
+			alert.setTitle("Alert");
+			alert.setContentText("ERROR AL GUARDAR");
+			alert.showAndWait();
+		}
+		mostrarAlertInfo();
+		Utils.tipopestaña="todos";
+		App.setRoot("Login");
 		
 	}
 	
@@ -75,6 +97,13 @@ public class C_Usuario_Controller {
 		alert.setHeaderText(null);
 		alert.setTitle("Alert");
 		alert.setContentText("Rellene todos los campos: " + campos);
+		alert.showAndWait();
+	}
+	private void mostrarAlertInfo() {
+		Alert alert = new Alert(Alert.AlertType.INFORMATION);
+		alert.setHeaderText(null);
+		alert.setTitle("Info");
+		alert.setContentText("Usuario guardado");
 		alert.showAndWait();
 	}
 
